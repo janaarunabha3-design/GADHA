@@ -41,4 +41,21 @@
 </audio>
 
 </body>
+
 </html>
+<script>
+  const noBtn = document.getElementById("no-btn");
+
+  function moveButton() {
+    noBtn.style.position = "absolute";
+    noBtn.style.top = Math.random() * window.innerHeight + "px";
+    noBtn.style.left = Math.random() * window.innerWidth + "px";
+  }
+
+  // For desktop
+  noBtn.addEventListener("mouseover", moveButton);
+
+  // For mobile
+  noBtn.addEventListener("touchstart", moveButton);
+</script>
+
